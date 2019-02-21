@@ -31,7 +31,6 @@
 		C76F73D82212B9CC0053D02B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76F73D72212B9CC0053D02B /* NetworkExtension.framework */; };
 		C76F73DA2212B9F70053D02B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76F73D72212B9CC0053D02B /* NetworkExtension.framework */; };
 		C76F73DC2212BC1D0053D02B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F73DB2212BC1D0053D02B /* MainMenu.swift */; };
-		C78A001521533EA30002D474 /* DropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78A001421533EA30002D474 /* DropDown.framework */; };
 		C7B5E7DC21BE616F00FA4F98 /* init.h.cmake.in in Resources */ = {isa = PBXBuildFile; fileRef = C7B5E6DF21BE616D00FA4F98 /* init.h.cmake.in */; };
 		C7B5E7DD21BE616F00FA4F98 /* FILES in Resources */ = {isa = PBXBuildFile; fileRef = C7B5E70D21BE616D00FA4F98 /* FILES */; };
 		C7B5E80A21BE616F00FA4F98 /* zepif.c in Sources */ = {isa = PBXBuildFile; fileRef = C7B5E78821BE616E00FA4F98 /* zepif.c */; };
@@ -462,7 +461,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C78A001521533EA30002D474 /* DropDown.framework in Frameworks */,
 				C7D42230214A5EA900EF8325 /* QRCodeReader.framework in Frameworks */,
 				04576F0920F673BB00E83AE5 /* Alamofire.framework in Frameworks */,
 				C76F73D82212B9CC0053D02B /* NetworkExtension.framework in Frameworks */,
@@ -1243,7 +1241,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/tun2socks.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Yaml.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/DropDown.framework",
 			);
 			name = "Run Script (copy frameworks)";
 			outputPaths = (
@@ -1260,7 +1257,6 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/tun2socks.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Yaml.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/QRCodeReader.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DropDown.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
