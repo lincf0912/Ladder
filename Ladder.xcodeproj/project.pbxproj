@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0445F9AF20676962003993A3 /* Shadowsocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445F9AE20676962003993A3 /* Shadowsocks.swift */; };
-		04576F0820F6739900E83AE5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E345120AF46CF005B0CB5 /* Alamofire.framework */; };
-		04576F0920F673BB00E83AE5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E345120AF46CF005B0CB5 /* Alamofire.framework */; };
 		046CFB2820E6238300BC2769 /* sys_arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 046CFB2720E6238300BC2769 /* sys_arch.c */; };
 		0485CBE72073838C003F596A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0485CBE52073838C003F596A /* InfoPlist.strings */; };
 		0485CBEB207383E6003F596A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0485CBE9207383E6003F596A /* Localizable.strings */; };
@@ -123,9 +121,11 @@
 		C7B9CAFB221CFDCC00252303 /* ServerProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFA221CFDCB00252303 /* ServerProfileManager.swift */; };
 		C7B9CAFD221CFED200252303 /* ServerListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFC221CFED200252303 /* ServerListController.swift */; };
 		C7B9CAFF221D41F300252303 /* UIColorExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFE221D41F300252303 /* UIColorExten.swift */; };
+		C7BD4C7C2286D6DD0016AAF6 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D4222F214A5EA800EF8325 /* QRCodeReader.framework */; };
+		C7BD4C7D2286D6E80016AAF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E345120AF46CF005B0CB5 /* Alamofire.framework */; };
+		C7BD4C7E2286D6FF0016AAF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E345120AF46CF005B0CB5 /* Alamofire.framework */; };
 		C7C79BD8215384EC000CFA5E /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495EA592073D77500320501 /* NEKit.framework */; };
 		C7C79BDA215385A4000CFA5E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C79BD9215385A3000CFA5E /* ConfigViewController.swift */; };
-		C7D42230214A5EA900EF8325 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D4222F214A5EA800EF8325 /* QRCodeReader.framework */; };
 		C7D42233214B41FE00EF8325 /* ServerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D42232214B41FE00EF8325 /* ServerProfile.swift */; };
 /* End PBXBuildFile section */
 
@@ -196,7 +196,6 @@
 		C76F73D72212B9CC0053D02B /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		C76F73D92212B9CC0053D02B /* Ladder-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ladder-iOS.entitlements"; sourceTree = "<group>"; };
 		C76F73DB2212BC1D0053D02B /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
-		C78A001421533EA30002D474 /* DropDown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropDown.framework; path = Carthage/Build/iOS/DropDown.framework; sourceTree = "<group>"; };
 		C7B5E69521BE616D00FA4F98 /* if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if.h; sourceTree = "<group>"; };
 		C7B5E69721BE616D00FA4F98 /* inet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inet.h; sourceTree = "<group>"; };
 		C7B5E69921BE616D00FA4F98 /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
@@ -461,8 +460,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D42230214A5EA900EF8325 /* QRCodeReader.framework in Frameworks */,
-				04576F0920F673BB00E83AE5 /* Alamofire.framework in Frameworks */,
+				C7BD4C7D2286D6E80016AAF6 /* Alamofire.framework in Frameworks */,
+				C7BD4C7C2286D6DD0016AAF6 /* QRCodeReader.framework in Frameworks */,
 				C76F73D82212B9CC0053D02B /* NetworkExtension.framework in Frameworks */,
 				0495EA552073D49000320501 /* Eureka.framework in Frameworks */,
 			);
@@ -472,9 +471,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7BD4C7E2286D6FF0016AAF6 /* Alamofire.framework in Frameworks */,
 				C7C79BD8215384EC000CFA5E /* NEKit.framework in Frameworks */,
 				C76F73DA2212B9F70053D02B /* NetworkExtension.framework in Frameworks */,
-				04576F0820F6739900E83AE5 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,7 +578,6 @@
 			children = (
 				C76F73D72212B9CC0053D02B /* NetworkExtension.framework */,
 				C76F73C02212AED40053D02B /* NetworkExtension.framework */,
-				C78A001421533EA30002D474 /* DropDown.framework */,
 				C7D4222F214A5EA800EF8325 /* QRCodeReader.framework */,
 				044E345120AF46CF005B0CB5 /* Alamofire.framework */,
 				0495EA542073D49000320501 /* Eureka.framework */,
@@ -1494,6 +1492,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1547,6 +1546,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1569,7 +1569,6 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.aofei.ladder-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1592,7 +1591,6 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.aofei.ladder-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1622,7 +1620,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = PacketTunnel/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/PacketTunnel/src/include $(SRCROOT)/PacketTunnel/lwip/src/include";
 			};
@@ -1652,7 +1649,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = PacketTunnel/BridgingHeader.h;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/PacketTunnel/src/include $(SRCROOT)/PacketTunnel/lwip/src/include";
 			};
@@ -1682,7 +1678,6 @@
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Ladder-mac/Ladder-mac-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1708,7 +1703,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Ladder-mac/Ladder-mac-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
