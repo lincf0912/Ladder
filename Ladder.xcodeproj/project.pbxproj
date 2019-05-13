@@ -11,7 +11,6 @@
 		046CFB2820E6238300BC2769 /* sys_arch.c in Sources */ = {isa = PBXBuildFile; fileRef = 046CFB2720E6238300BC2769 /* sys_arch.c */; };
 		0485CBE72073838C003F596A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0485CBE52073838C003F596A /* InfoPlist.strings */; };
 		0485CBEB207383E6003F596A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0485CBE9207383E6003F596A /* Localizable.strings */; };
-		0495EA552073D49000320501 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495EA542073D49000320501 /* Eureka.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		04EA46092064C9B7002578AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA46082064C9B7002578AF /* AppDelegate.swift */; };
 		04EA46102064C9B7002578AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EA460F2064C9B7002578AF /* Assets.xcassets */; };
 		04EA46132064C9B7002578AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EA46112064C9B7002578AF /* LaunchScreen.storyboard */; };
@@ -19,16 +18,20 @@
 		04EA463B2064D10E002578AF /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04EA46332064D10E002578AF /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C7638653221BD59700808267 /* AppDelegate+MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7638652221BD59700808267 /* AppDelegate+MainMenu.swift */; };
 		C7638655221BD5CA00808267 /* AppDelegate+VPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7638654221BD5CA00808267 /* AppDelegate+VPN.swift */; };
-		C7638658221BD62900808267 /* ServerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D42232214B41FE00EF8325 /* ServerProfile.swift */; };
 		C763865A221BD63B00808267 /* ServerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7638659221BD63B00808267 /* ServerProfile.swift */; };
 		C7638661221BEB9800808267 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C7638660221BEB9800808267 /* Utils.m */; };
 		C76F73C92212B80E0053D02B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F73C82212B80E0053D02B /* AppDelegate.swift */; };
 		C76F73CB2212B80F0053D02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76F73CA2212B80F0053D02B /* Assets.xcassets */; };
 		C76F73CE2212B80F0053D02B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76F73CC2212B80F0053D02B /* MainMenu.xib */; };
-		C76F73D52212B81F0053D02B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76F73C02212AED40053D02B /* NetworkExtension.framework */; };
-		C76F73D82212B9CC0053D02B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76F73D72212B9CC0053D02B /* NetworkExtension.framework */; };
-		C76F73DA2212B9F70053D02B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76F73D72212B9CC0053D02B /* NetworkExtension.framework */; };
 		C76F73DC2212BC1D0053D02B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F73DB2212BC1D0053D02B /* MainMenu.swift */; };
+		C78262662289572000C5C05E /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262632289571F00C5C05E /* Eureka.framework */; };
+		C78262672289572000C5C05E /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262642289571F00C5C05E /* QRCodeReader.framework */; };
+		C78262682289572000C5C05E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262652289572000C5C05E /* Alamofire.framework */; };
+		C782626A2289572600C5C05E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262692289572600C5C05E /* NetworkExtension.framework */; };
+		C782626B2289574400C5C05E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262652289572000C5C05E /* Alamofire.framework */; };
+		C782626C2289579C00C5C05E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262692289572600C5C05E /* NetworkExtension.framework */; };
+		C782626E2289588400C5C05E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C782626D2289588400C5C05E /* Alamofire.framework */; };
+		C78262702289588900C5C05E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C782626F2289588900C5C05E /* NetworkExtension.framework */; };
 		C7B5E7DC21BE616F00FA4F98 /* init.h.cmake.in in Resources */ = {isa = PBXBuildFile; fileRef = C7B5E6DF21BE616D00FA4F98 /* init.h.cmake.in */; };
 		C7B5E7DD21BE616F00FA4F98 /* FILES in Resources */ = {isa = PBXBuildFile; fileRef = C7B5E70D21BE616D00FA4F98 /* FILES */; };
 		C7B5E80A21BE616F00FA4F98 /* zepif.c in Sources */ = {isa = PBXBuildFile; fileRef = C7B5E78821BE616E00FA4F98 /* zepif.c */; };
@@ -121,10 +124,6 @@
 		C7B9CAFB221CFDCC00252303 /* ServerProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFA221CFDCB00252303 /* ServerProfileManager.swift */; };
 		C7B9CAFD221CFED200252303 /* ServerListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFC221CFED200252303 /* ServerListController.swift */; };
 		C7B9CAFF221D41F300252303 /* UIColorExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFE221D41F300252303 /* UIColorExten.swift */; };
-		C7BD4C7C2286D6DD0016AAF6 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D4222F214A5EA800EF8325 /* QRCodeReader.framework */; };
-		C7BD4C7D2286D6E80016AAF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E345120AF46CF005B0CB5 /* Alamofire.framework */; };
-		C7BD4C7E2286D6FF0016AAF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044E345120AF46CF005B0CB5 /* Alamofire.framework */; };
-		C7C79BD8215384EC000CFA5E /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0495EA592073D77500320501 /* NEKit.framework */; };
 		C7C79BDA215385A4000CFA5E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C79BD9215385A3000CFA5E /* ConfigViewController.swift */; };
 		C7D42233214B41FE00EF8325 /* ServerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D42232214B41FE00EF8325 /* ServerProfile.swift */; };
 /* End PBXBuildFile section */
@@ -155,14 +154,11 @@
 
 /* Begin PBXFileReference section */
 		0445F9AE20676962003993A3 /* Shadowsocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowsocks.swift; sourceTree = "<group>"; };
-		044E345120AF46CF005B0CB5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		046CFB2720E6238300BC2769 /* sys_arch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys_arch.c; sourceTree = "<group>"; };
 		0485CBE62073838C003F596A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0485CBE8207383B6003F596A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		0485CBEA207383E6003F596A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0485CBEC20738401003F596A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		0495EA542073D49000320501 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
-		0495EA592073D77500320501 /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/iOS/NEKit.framework; sourceTree = "<group>"; };
 		04AD1AA320E618C100EC40F4 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		04DC460220E622C000F6841B /* sys_arch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys_arch.h; sourceTree = "<group>"; };
 		04DC460320E622C000F6841B /* cc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc.h; sourceTree = "<group>"; };
@@ -185,7 +181,6 @@
 		C763865E221BEB9700808267 /* Ladder-mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ladder-mac-Bridging-Header.h"; sourceTree = "<group>"; };
 		C763865F221BEB9800808267 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		C7638660221BEB9800808267 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		C76F73C02212AED40053D02B /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
 		C76F73C62212B80E0053D02B /* Ladder-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ladder-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76F73C82212B80E0053D02B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76F73CA2212B80F0053D02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,9 +188,14 @@
 		C76F73CF2212B80F0053D02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76F73D02212B80F0053D02B /* Ladder_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ladder_mac.entitlements; sourceTree = "<group>"; };
 		C76F73D42212B81E0053D02B /* Ladder-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ladder-mac.entitlements"; sourceTree = "<group>"; };
-		C76F73D72212B9CC0053D02B /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		C76F73D92212B9CC0053D02B /* Ladder-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ladder-iOS.entitlements"; sourceTree = "<group>"; };
 		C76F73DB2212BC1D0053D02B /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		C78262632289571F00C5C05E /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		C78262642289571F00C5C05E /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
+		C78262652289572000C5C05E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		C78262692289572600C5C05E /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		C782626D2289588400C5C05E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		C782626F2289588900C5C05E /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
 		C7B5E69521BE616D00FA4F98 /* if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if.h; sourceTree = "<group>"; };
 		C7B5E69721BE616D00FA4F98 /* inet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inet.h; sourceTree = "<group>"; };
 		C7B5E69921BE616D00FA4F98 /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
@@ -451,7 +451,6 @@
 		C7B9CAFC221CFED200252303 /* ServerListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListController.swift; sourceTree = "<group>"; };
 		C7B9CAFE221D41F300252303 /* UIColorExten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExten.swift; sourceTree = "<group>"; };
 		C7C79BD9215385A3000CFA5E /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
-		C7D4222F214A5EA800EF8325 /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
 		C7D42232214B41FE00EF8325 /* ServerProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -460,10 +459,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7BD4C7D2286D6E80016AAF6 /* Alamofire.framework in Frameworks */,
-				C7BD4C7C2286D6DD0016AAF6 /* QRCodeReader.framework in Frameworks */,
-				C76F73D82212B9CC0053D02B /* NetworkExtension.framework in Frameworks */,
-				0495EA552073D49000320501 /* Eureka.framework in Frameworks */,
+				C782626A2289572600C5C05E /* NetworkExtension.framework in Frameworks */,
+				C78262662289572000C5C05E /* Eureka.framework in Frameworks */,
+				C78262672289572000C5C05E /* QRCodeReader.framework in Frameworks */,
+				C78262682289572000C5C05E /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,9 +470,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7BD4C7E2286D6FF0016AAF6 /* Alamofire.framework in Frameworks */,
-				C7C79BD8215384EC000CFA5E /* NEKit.framework in Frameworks */,
-				C76F73DA2212B9F70053D02B /* NetworkExtension.framework in Frameworks */,
+				C782626C2289579C00C5C05E /* NetworkExtension.framework in Frameworks */,
+				C782626B2289574400C5C05E /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +479,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76F73D52212B81F0053D02B /* NetworkExtension.framework in Frameworks */,
+				C78262702289588900C5C05E /* NetworkExtension.framework in Frameworks */,
+				C782626E2289588400C5C05E /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,12 +575,12 @@
 		04EA462C2064CFE2002578AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C76F73D72212B9CC0053D02B /* NetworkExtension.framework */,
-				C76F73C02212AED40053D02B /* NetworkExtension.framework */,
-				C7D4222F214A5EA800EF8325 /* QRCodeReader.framework */,
-				044E345120AF46CF005B0CB5 /* Alamofire.framework */,
-				0495EA542073D49000320501 /* Eureka.framework */,
-				0495EA592073D77500320501 /* NEKit.framework */,
+				C782626F2289588900C5C05E /* NetworkExtension.framework */,
+				C782626D2289588400C5C05E /* Alamofire.framework */,
+				C78262692289572600C5C05E /* NetworkExtension.framework */,
+				C78262652289572000C5C05E /* Alamofire.framework */,
+				C78262632289571F00C5C05E /* Eureka.framework */,
+				C78262642289571F00C5C05E /* QRCodeReader.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1114,7 +1113,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Aofei Sheng";
 				TargetAttributes = {
 					04EA46042064C9B7002578AF = {
@@ -1376,7 +1375,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C763865A221BD63B00808267 /* ServerProfile.swift in Sources */,
-				C7638658221BD62900808267 /* ServerProfile.swift in Sources */,
 				C7638653221BD59700808267 /* AppDelegate+MainMenu.swift in Sources */,
 				C7638655221BD5CA00808267 /* AppDelegate+VPN.swift in Sources */,
 				C76F73C92212B80E0053D02B /* AppDelegate.swift in Sources */,
@@ -1492,7 +1490,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1546,7 +1544,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1667,7 +1665,7 @@
 				DEVELOPMENT_TEAM = 3VDRUN62M8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = "Ladder-mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1694,7 +1692,7 @@
 				DEVELOPMENT_TEAM = 3VDRUN62M8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = "Ladder-mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

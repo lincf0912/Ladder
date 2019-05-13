@@ -1,4 +1,4 @@
-github "Alamofire/Alamofire" ~> 4.7.3
-github "xmartlabs/Eureka" ~> 4.2.0
+github "Alamofire/Alamofire" >= 4.7.3
+github "xmartlabs/Eureka" >= 4.2.0
 github "zhuhaow/NEKit"
 github "yannickl/QRCodeReader.swift" >= 8.2.0
