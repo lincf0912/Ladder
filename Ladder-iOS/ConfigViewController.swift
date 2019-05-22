@@ -45,22 +45,26 @@ class ConfigViewController: FormViewController, UIImagePickerControllerDelegate,
                 row.tag = "General - PAC URL"
                 row.title = "PAC URL"
                 row.placeholder = NSLocalizedString("Enter PAC URL here", comment: "")
-                row.value = URL(string: "https://git.io/fAPIe")
+                row.value = URL(string: profile!.PAC_URL)
                 
                 row.add(rule: RuleRequired(msg: NSLocalizedString("Please enter a PAC URL.", comment: "")))
                 row.add(rule: RuleURL(allowsEmpty: false, requiresProtocol: true, msg: NSLocalizedString("Please enter a valid PAC URL.", comment: "")))
-            }
+                }.onChange({ (row) in
+                    self.profile?.PAC_URL = row.value?.absoluteString ?? ""
+                    })
             <<< IntRow { row in
                 row.tag = "General - PAC Max Age"
                 row.title = NSLocalizedString("PAC Max Age", comment: "")
                 row.placeholder = NSLocalizedString("Enter PAC max age here", comment: "")
-                row.value = 3600
+                row.value = Int(profile!.PAC_Max_Age)
                 row.formatter = NumberFormatter()
                 
                 row.add(rule: RuleRequired(msg: NSLocalizedString("Please enter a PAC max age.", comment: "")))
                 row.add(rule: RuleGreaterOrEqualThan(min: 0, msg: NSLocalizedString("PAC max age must greater than or equal to 0.", comment: "")))
                 row.add(rule: RuleSmallerOrEqualThan(max: 86400, msg: NSLocalizedString("PAC max age must smaller than or equal to 86400.", comment: "")))
-            }
+                }.onChange({ (row) in
+                    self.profile?.PAC_Max_Age = uint_fast16_t(row.value ?? 0)
+                })
             
             +++ Section(header: NSLocalizedString("Shadowsocks", comment: ""), footer: "") { section in
                 section.tag = "Shadowsocks"
@@ -100,23 +104,27 @@ class ConfigViewController: FormViewController, UIImagePickerControllerDelegate,
                 row.tag = "Shadowsocks - Local Address"
                 row.title = NSLocalizedString("Local Address", comment: "")
                 row.placeholder = NSLocalizedString("Enter local address here", comment: "")
-                row.value = "127.0.0.1"
+                row.value = profile!.localHost
                 row.cell.textField.keyboardType = .asciiCapable
                 row.cell.textField.autocapitalizationType = .none
                 
                 row.add(rule: RuleRequired(msg: NSLocalizedString("Please enter a Shadowsocks local address.", comment: "")))
-            }
+                }.onChange({ (row) in
+                    self.profile?.localHost = row.value ?? ""
+                })
             <<< IntRow { row in
                 row.tag = "Shadowsocks - Local Port"
                 row.title = NSLocalizedString("Local Port", comment: "")
                 row.placeholder = NSLocalizedString("Enter local port here", comment: "")
-                row.value = 1081
+                row.value = Int(profile!.localPort)
                 row.formatter = NumberFormatter()
                 
                 row.add(rule: RuleRequired(msg: NSLocalizedString("Please enter a Shadowsocks local port.", comment: "")))
                 row.add(rule: RuleGreaterOrEqualThan(min: 0, msg: NSLocalizedString("Shadowsocks local port must greater than or equal to 0.", comment: "")))
                 row.add(rule: RuleSmallerOrEqualThan(max: 65535, msg: NSLocalizedString("Shadowsocks local port must smaller than or equal to 65535.", comment: "")))
-            }
+                }.onChange({ (row) in
+                    self.profile?.localPort = uint_fast16_t(row.value ?? 0)
+                })
             <<< PasswordRow { row in
                 row.tag = "Shadowsocks - Password"
                 row.title = NSLocalizedString("Password", comment: "")
@@ -258,6 +266,10 @@ class ConfigViewController: FormViewController, UIImagePickerControllerDelegate,
                             providerManager.isEnabled = true
                             providerManager.saveToPreferences { error in
                                 if error == nil {
+                                    
+                                    // 保存设置
+                                    ServerProfileManager.instance.save()
+                                    
                                     providerManager.loadFromPreferences { error in
                                         if error == nil {
                                             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {

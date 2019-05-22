@@ -16,22 +16,10 @@
 		04EA46132064C9B7002578AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EA46112064C9B7002578AF /* LaunchScreen.storyboard */; };
 		04EA46362064D10E002578AF /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EA46352064D10E002578AF /* PacketTunnelProvider.swift */; };
 		04EA463B2064D10E002578AF /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04EA46332064D10E002578AF /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C7638653221BD59700808267 /* AppDelegate+MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7638652221BD59700808267 /* AppDelegate+MainMenu.swift */; };
-		C7638655221BD5CA00808267 /* AppDelegate+VPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7638654221BD5CA00808267 /* AppDelegate+VPN.swift */; };
-		C763865A221BD63B00808267 /* ServerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7638659221BD63B00808267 /* ServerProfile.swift */; };
-		C7638661221BEB9800808267 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C7638660221BEB9800808267 /* Utils.m */; };
-		C76F73C92212B80E0053D02B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F73C82212B80E0053D02B /* AppDelegate.swift */; };
-		C76F73CB2212B80F0053D02B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76F73CA2212B80F0053D02B /* Assets.xcassets */; };
-		C76F73CE2212B80F0053D02B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76F73CC2212B80F0053D02B /* MainMenu.xib */; };
-		C76F73DC2212BC1D0053D02B /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F73DB2212BC1D0053D02B /* MainMenu.swift */; };
 		C78262662289572000C5C05E /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262632289571F00C5C05E /* Eureka.framework */; };
 		C78262672289572000C5C05E /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262642289571F00C5C05E /* QRCodeReader.framework */; };
 		C78262682289572000C5C05E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262652289572000C5C05E /* Alamofire.framework */; };
-		C782626A2289572600C5C05E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262692289572600C5C05E /* NetworkExtension.framework */; };
-		C782626B2289574400C5C05E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262652289572000C5C05E /* Alamofire.framework */; };
-		C782626C2289579C00C5C05E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262692289572600C5C05E /* NetworkExtension.framework */; };
-		C782626E2289588400C5C05E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C782626D2289588400C5C05E /* Alamofire.framework */; };
-		C78262702289588900C5C05E /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C782626F2289588900C5C05E /* NetworkExtension.framework */; };
+		C791FBAB2294EAC700ECC9F9 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C791FBAA2294EAC700ECC9F9 /* NEKit.framework */; };
 		C7B5E7DC21BE616F00FA4F98 /* init.h.cmake.in in Resources */ = {isa = PBXBuildFile; fileRef = C7B5E6DF21BE616D00FA4F98 /* init.h.cmake.in */; };
 		C7B5E7DD21BE616F00FA4F98 /* FILES in Resources */ = {isa = PBXBuildFile; fileRef = C7B5E70D21BE616D00FA4F98 /* FILES */; };
 		C7B5E80A21BE616F00FA4F98 /* zepif.c in Sources */ = {isa = PBXBuildFile; fileRef = C7B5E78821BE616E00FA4F98 /* zepif.c */; };
@@ -124,6 +112,8 @@
 		C7B9CAFB221CFDCC00252303 /* ServerProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFA221CFDCB00252303 /* ServerProfileManager.swift */; };
 		C7B9CAFD221CFED200252303 /* ServerListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFC221CFED200252303 /* ServerListController.swift */; };
 		C7B9CAFF221D41F300252303 /* UIColorExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9CAFE221D41F300252303 /* UIColorExten.swift */; };
+		C7BBB1352293FA180095845D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BBB1342293FA180095845D /* NetworkExtension.framework */; };
+		C7BBB1362293FA2A0095845D /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BBB1342293FA180095845D /* NetworkExtension.framework */; };
 		C7C79BDA215385A4000CFA5E /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C79BD9215385A3000CFA5E /* ConfigViewController.swift */; };
 		C7D42233214B41FE00EF8325 /* ServerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D42232214B41FE00EF8325 /* ServerProfile.swift */; };
 /* End PBXBuildFile section */
@@ -175,27 +165,11 @@
 		04EA46372064D10E002578AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04EA46382064D10E002578AF /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
 		04F368CB2074C31A00CA8B34 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
-		C7638652221BD59700808267 /* AppDelegate+MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+MainMenu.swift"; sourceTree = "<group>"; };
-		C7638654221BD5CA00808267 /* AppDelegate+VPN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+VPN.swift"; sourceTree = "<group>"; };
-		C7638659221BD63B00808267 /* ServerProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerProfile.swift; path = "Ladder-iOS/ServerProfile.swift"; sourceTree = SOURCE_ROOT; };
-		C763865E221BEB9700808267 /* Ladder-mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ladder-mac-Bridging-Header.h"; sourceTree = "<group>"; };
-		C763865F221BEB9800808267 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
-		C7638660221BEB9800808267 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		C76F73C62212B80E0053D02B /* Ladder-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ladder-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C76F73C82212B80E0053D02B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C76F73CA2212B80F0053D02B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C76F73CD2212B80F0053D02B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		C76F73CF2212B80F0053D02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C76F73D02212B80F0053D02B /* Ladder_mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ladder_mac.entitlements; sourceTree = "<group>"; };
-		C76F73D42212B81E0053D02B /* Ladder-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ladder-mac.entitlements"; sourceTree = "<group>"; };
 		C76F73D92212B9CC0053D02B /* Ladder-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ladder-iOS.entitlements"; sourceTree = "<group>"; };
-		C76F73DB2212BC1D0053D02B /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		C78262632289571F00C5C05E /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		C78262642289571F00C5C05E /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
 		C78262652289572000C5C05E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		C78262692289572600C5C05E /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
-		C782626D2289588400C5C05E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
-		C782626F2289588900C5C05E /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/NetworkExtension.framework; sourceTree = DEVELOPER_DIR; };
+		C791FBAA2294EAC700ECC9F9 /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/iOS/NEKit.framework; sourceTree = "<group>"; };
 		C7B5E69521BE616D00FA4F98 /* if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if.h; sourceTree = "<group>"; };
 		C7B5E69721BE616D00FA4F98 /* inet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inet.h; sourceTree = "<group>"; };
 		C7B5E69921BE616D00FA4F98 /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
@@ -450,6 +424,7 @@
 		C7B9CAFA221CFDCB00252303 /* ServerProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerProfileManager.swift; sourceTree = "<group>"; };
 		C7B9CAFC221CFED200252303 /* ServerListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListController.swift; sourceTree = "<group>"; };
 		C7B9CAFE221D41F300252303 /* UIColorExten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExten.swift; sourceTree = "<group>"; };
+		C7BBB1342293FA180095845D /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		C7C79BD9215385A3000CFA5E /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		C7D42232214B41FE00EF8325 /* ServerProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -459,8 +434,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C782626A2289572600C5C05E /* NetworkExtension.framework in Frameworks */,
 				C78262662289572000C5C05E /* Eureka.framework in Frameworks */,
+				C7BBB1352293FA180095845D /* NetworkExtension.framework in Frameworks */,
 				C78262672289572000C5C05E /* QRCodeReader.framework in Frameworks */,
 				C78262682289572000C5C05E /* Alamofire.framework in Frameworks */,
 			);
@@ -470,17 +445,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C782626C2289579C00C5C05E /* NetworkExtension.framework in Frameworks */,
-				C782626B2289574400C5C05E /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C76F73C32212B80E0053D02B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C78262702289588900C5C05E /* NetworkExtension.framework in Frameworks */,
-				C782626E2289588400C5C05E /* Alamofire.framework in Frameworks */,
+				C791FBAB2294EAC700ECC9F9 /* NEKit.framework in Frameworks */,
+				C7BBB1362293FA2A0095845D /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +502,6 @@
 			children = (
 				04EA46072064C9B7002578AF /* Ladder-iOS */,
 				04EA46342064D10E002578AF /* PacketTunnel */,
-				C76F73C72212B80E0053D02B /* Ladder-mac */,
 				04EA462C2064CFE2002578AF /* Frameworks */,
 				04EA46062064C9B7002578AF /* Products */,
 			);
@@ -547,7 +512,6 @@
 			children = (
 				04EA46052064C9B7002578AF /* Ladder-iOS.app */,
 				04EA46332064D10E002578AF /* PacketTunnel.appex */,
-				C76F73C62212B80E0053D02B /* Ladder-mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -575,9 +539,8 @@
 		04EA462C2064CFE2002578AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C782626F2289588900C5C05E /* NetworkExtension.framework */,
-				C782626D2289588400C5C05E /* Alamofire.framework */,
-				C78262692289572600C5C05E /* NetworkExtension.framework */,
+				C791FBAA2294EAC700ECC9F9 /* NEKit.framework */,
+				C7BBB1342293FA180095845D /* NetworkExtension.framework */,
 				C78262652289572000C5C05E /* Alamofire.framework */,
 				C78262632289571F00C5C05E /* Eureka.framework */,
 				C78262642289571F00C5C05E /* QRCodeReader.framework */,
@@ -597,26 +560,6 @@
 				04EA46382064D10E002578AF /* PacketTunnel.entitlements */,
 			);
 			path = PacketTunnel;
-			sourceTree = "<group>";
-		};
-		C76F73C72212B80E0053D02B /* Ladder-mac */ = {
-			isa = PBXGroup;
-			children = (
-				C76F73D42212B81E0053D02B /* Ladder-mac.entitlements */,
-				C76F73C82212B80E0053D02B /* AppDelegate.swift */,
-				C7638652221BD59700808267 /* AppDelegate+MainMenu.swift */,
-				C7638654221BD5CA00808267 /* AppDelegate+VPN.swift */,
-				C7638659221BD63B00808267 /* ServerProfile.swift */,
-				C76F73DB2212BC1D0053D02B /* MainMenu.swift */,
-				C763865F221BEB9800808267 /* Utils.h */,
-				C7638660221BEB9800808267 /* Utils.m */,
-				C76F73CA2212B80F0053D02B /* Assets.xcassets */,
-				C76F73CC2212B80F0053D02B /* MainMenu.xib */,
-				C76F73CF2212B80F0053D02B /* Info.plist */,
-				C76F73D02212B80F0053D02B /* Ladder_mac.entitlements */,
-				C763865E221BEB9700808267 /* Ladder-mac-Bridging-Header.h */,
-			);
-			path = "Ladder-mac";
 			sourceTree = "<group>";
 		};
 		C7B5E19321BE613B00FA4F98 /* lwip */ = {
@@ -1089,23 +1032,6 @@
 			productReference = 04EA46332064D10E002578AF /* PacketTunnel.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		C76F73C52212B80E0053D02B /* Ladder-mac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C76F73D12212B80F0053D02B /* Build configuration list for PBXNativeTarget "Ladder-mac" */;
-			buildPhases = (
-				C76F73C22212B80E0053D02B /* Sources */,
-				C76F73C32212B80E0053D02B /* Frameworks */,
-				C76F73C42212B80E0053D02B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Ladder-mac";
-			productName = "Ladder-mac";
-			productReference = C76F73C62212B80E0053D02B /* Ladder-mac.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1148,19 +1074,6 @@
 							};
 						};
 					};
-					C76F73C52212B80E0053D02B = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 0;
-							};
-							com.apple.VPNLite = {
-								enabled = 1;
-							};
-						};
-					};
 				};
 			};
 			buildConfigurationList = 04EA46002064C9B7002578AF /* Build configuration list for PBXProject "Ladder" */;
@@ -1179,7 +1092,6 @@
 			targets = (
 				04EA46042064C9B7002578AF /* Ladder-iOS */,
 				04EA46322064D10E002578AF /* PacketTunnel */,
-				C76F73C52212B80E0053D02B /* Ladder-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -1204,15 +1116,6 @@
 				C7B5E81D21BE616F00FA4F98 /* README in Resources */,
 				C7B5E7DC21BE616F00FA4F98 /* init.h.cmake.in in Resources */,
 				C7B5E82D21BE616F00FA4F98 /* PPPD_FOLLOWUP in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C76F73C42212B80E0053D02B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C76F73CB2212B80F0053D02B /* Assets.xcassets in Resources */,
-				C76F73CE2212B80F0053D02B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1370,19 +1273,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C76F73C22212B80E0053D02B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C763865A221BD63B00808267 /* ServerProfile.swift in Sources */,
-				C7638653221BD59700808267 /* AppDelegate+MainMenu.swift in Sources */,
-				C7638655221BD5CA00808267 /* AppDelegate+VPN.swift in Sources */,
-				C76F73C92212B80E0053D02B /* AppDelegate.swift in Sources */,
-				C7638661221BEB9800808267 /* Utils.m in Sources */,
-				C76F73DC2212BC1D0053D02B /* MainMenu.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1419,14 +1309,6 @@
 				04F368CB2074C31A00CA8B34 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		C76F73CC2212B80F0053D02B /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C76F73CD2212B80F0053D02B /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1652,58 +1534,6 @@
 			};
 			name = Release;
 		};
-		C76F73D22212B80F0053D02B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = "Ladder-mac/Ladder-mac.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3VDRUN62M8;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "Ladder-mac/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.aofei.ladder-mac";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Ladder-mac/Ladder-mac-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		C76F73D32212B80F0053D02B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = "Ladder-mac/Ladder-mac.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3VDRUN62M8;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "Ladder-mac/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.aofei.ladder-mac";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "Ladder-mac/Ladder-mac-Bridging-Header.h";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1730,15 +1560,6 @@
 			buildConfigurations = (
 				04EA463D2064D10E002578AF /* Debug */,
 				04EA463E2064D10E002578AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C76F73D12212B80F0053D02B /* Build configuration list for PBXNativeTarget "Ladder-mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C76F73D22212B80F0053D02B /* Debug */,
-				C76F73D32212B80F0053D02B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

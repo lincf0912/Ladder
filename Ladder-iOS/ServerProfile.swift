@@ -27,6 +27,12 @@ class ServerProfile: NSObject, NSCopying {
     @objc var password:String = ""
     @objc var remark:String = ""
     
+    @objc var PAC_URL: String = "https://git.io/fAPIe"
+    @objc var PAC_Max_Age: uint_fast16_t = 3600
+    
+    @objc var localHost: String = "127.0.0.1"
+    @objc var localPort: uint_fast16_t = 1081
+    
     override init() {
         uuid = UUID().uuidString
     }
@@ -113,6 +119,12 @@ class ServerProfile: NSObject, NSCopying {
         copy.password = self.password
         copy.remark = self.remark
         
+        copy.PAC_URL = self.PAC_URL
+        copy.PAC_Max_Age = self.PAC_Max_Age
+        
+        copy.localHost = self.localHost
+        copy.localPort = self.localPort
+        
         return copy;
     }
     
@@ -127,6 +139,12 @@ class ServerProfile: NSObject, NSCopying {
             if let remark = data["Remark"] {
                 profile.remark = remark as! String
             }
+            
+            profile.PAC_URL = data["PAC_URL"] as! String
+            profile.PAC_Max_Age = (data["PAC_Max_Age"] as! NSNumber).uint16Value
+            
+            profile.localHost = data["LocalHost"] as! String
+            profile.localPort = (data["LocalPort"] as! NSNumber).uint16Value
         }
 
         if let id = data["Id"] as? String {
@@ -149,6 +167,13 @@ class ServerProfile: NSObject, NSCopying {
         d["Method"] = method as AnyObject?
         d["Password"] = password as AnyObject?
         d["Remark"] = remark as AnyObject?
+        
+        d["PAC_URL"] = PAC_URL as AnyObject?
+        d["PAC_Max_Age"] = NSNumber(value: PAC_Max_Age as UInt16)
+        
+        d["LocalHost"] = localHost as AnyObject?
+        d["LocalPort"] = NSNumber(value: localPort as UInt16)
+        
         return d
     }
 
