@@ -20,6 +20,7 @@
 		C78262672289572000C5C05E /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262642289571F00C5C05E /* QRCodeReader.framework */; };
 		C78262682289572000C5C05E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262652289572000C5C05E /* Alamofire.framework */; };
 		C791FBAB2294EAC700ECC9F9 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C791FBAA2294EAC700ECC9F9 /* NEKit.framework */; };
+		C791FBAC2294F54600ECC9F9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78262652289572000C5C05E /* Alamofire.framework */; };
 		C7B5E7DC21BE616F00FA4F98 /* init.h.cmake.in in Resources */ = {isa = PBXBuildFile; fileRef = C7B5E6DF21BE616D00FA4F98 /* init.h.cmake.in */; };
 		C7B5E7DD21BE616F00FA4F98 /* FILES in Resources */ = {isa = PBXBuildFile; fileRef = C7B5E70D21BE616D00FA4F98 /* FILES */; };
 		C7B5E80A21BE616F00FA4F98 /* zepif.c in Sources */ = {isa = PBXBuildFile; fileRef = C7B5E78821BE616E00FA4F98 /* zepif.c */; };
@@ -446,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C791FBAB2294EAC700ECC9F9 /* NEKit.framework in Frameworks */,
+				C791FBAC2294F54600ECC9F9 /* Alamofire.framework in Frameworks */,
 				C7BBB1362293FA2A0095845D /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1438,7 +1440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Ladder-iOS/Ladder-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8576P6CRCJ;
+				DEVELOPMENT_TEAM = 3VDRUN62M8;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1447,7 +1449,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Ladder-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.ladder-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzmiracle.ladder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1460,7 +1462,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Ladder-iOS/Ladder-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8576P6CRCJ;
+				DEVELOPMENT_TEAM = 3VDRUN62M8;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1469,7 +1471,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Ladder-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.ladder-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gzmiracle.ladder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1485,7 +1487,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8576P6CRCJ;
+				DEVELOPMENT_TEAM = 3VDRUN62M8;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1494,7 +1496,7 @@
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.ladder-iOS.packet-tunnel";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.ladder.packet-tunnel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1515,7 +1517,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8576P6CRCJ;
+				DEVELOPMENT_TEAM = 3VDRUN62M8;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1524,7 +1526,7 @@
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.ladder-iOS.packet-tunnel";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gzmiracle.ladder.packet-tunnel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
