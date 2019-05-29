@@ -34,16 +34,20 @@ Ladder  A solution for the IWE (Immersive Wallless Experience) on iOS/MAC platfo
 ## Installation
 
 1. Check out the latest version of the project:
-
-```bash
+````
 $ git clone https://github.com/lincf0912/Ladder.git
-```
+````
 
-2. Open the `Ladder.xcodeproj`.
+2. Update Carthage
+````
+$ carthage update --no-use-binaries --platform ios
+````
 
-3. Build and run the `Ladder` scheme.
+3. Open the `Ladder.xcodeproj`.
 
-4. Enjoy yourself.
+4. Build and run the `Ladder` scheme.
+
+5. Enjoy yourself.
 
 ## License
 
