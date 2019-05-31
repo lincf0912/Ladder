@@ -1,6 +1,6 @@
 // Software License Agreement (BSD License)
 //
-// Copyright (c) 2010-2019, Deusty, LLC
+// Copyright (c) 2010-2018, Deusty, LLC
 // All rights reserved.
 //
 // Redistribution and use of this software in source and binary forms,
@@ -20,10 +20,10 @@
     #define DD_LEGACY_MACROS 1
 #endif
 // DD_LEGACY_MACROS is checked in the file itself
-#import <CocoaLumberjack/DDLegacyMacros.h>
+#import "DDLegacyMacros.h"
 
 // Names of loggers.
-#import <CocoaLumberjack/DDLoggerNames.h>
+#import "DDLoggerNames.h"
 
 #if OS_OBJECT_USE_OBJC
     #define DISPATCH_QUEUE_REFERENCE_TYPE strong
