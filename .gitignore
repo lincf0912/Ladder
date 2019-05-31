@@ -27,6 +27,7 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+*.bcsymbolmap
 
 ## Playgrounds
 timeline.xctimeline
@@ -51,9 +52,10 @@ playground.xcworkspace
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
 
-Carthage/Build
+Carthage/Checkouts
+
+# Carthage/Build
 
 # fastlane
 #
