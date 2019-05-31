@@ -38,7 +38,7 @@ Ladder  A solution for the IWE (Immersive Wallless Experience) on iOS/MAC platfo
 $ git clone https://github.com/lincf0912/Ladder.git
 ````
 
-2. Update Carthage
+2. Update Carthage (Dispensable)
 ````
 $ carthage update --no-use-binaries --platform ios
 ````
