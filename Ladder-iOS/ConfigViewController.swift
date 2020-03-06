@@ -140,7 +140,7 @@ class ConfigViewController: FormViewController, UIImagePickerControllerDelegate,
                 row.tag = "Shadowsocks - Method"
                 row.title = NSLocalizedString("Method", comment: "")
                 row.selectorTitle = NSLocalizedString("Shadowsocks Method", comment: "")
-                let options = ["AES-128-CFB", "AES-192-CFB", "AES-256-CFB", "ChaCha20", "Salsa20", "RC4-MD5"] as [String]
+                let options = ["AES-128-CFB", "AES-192-CFB", "AES-256-CFB", "ChaCha20", "Salsa20", "RC4-MD5", "chacha20-ietf"] as [String]
                 row.options = options
                 if let method = profile?.method {
                     for option in options {

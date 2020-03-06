@@ -38,7 +38,7 @@ class ServerListController: UIViewController, UIImagePickerControllerDelegate, U
         
         navigationItem.title = NSLocalizedString("Ladder", comment: "")
         //        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Icons/QRCode"), style: .plain, target: self, action: #selector(openPost))
-        let imageview = UIImageView(image: #imageLiteral(resourceName: "Icons/QRCode"))
+        let imageview = UIImageView(image: UIImage.init(imageLiteralResourceName: "Icons/QRCode"))
         imageview.isUserInteractionEnabled = true
         let tapGes = UITapGestureRecognizer(target: self, action: #selector(openPost(_:)))
         imageview.addGestureRecognizer(tapGes)
@@ -146,6 +146,10 @@ class ServerListController: UIViewController, UIImagePickerControllerDelegate, U
                                 QRCodeResult = result
                                 break;
                             }
+                            if result.hasPrefix("ssr://") {
+                                QRCodeResult = result
+                                break;
+                            }
                         }
                     }
                 }
@@ -174,6 +178,8 @@ class ServerListController: UIViewController, UIImagePickerControllerDelegate, U
         
         dismiss(animated: true) { [weak self] in
             if (result.value.hasPrefix("ss://")) {
+                self?.handleQRCodeResult(result.value)
+            } else if (result.value.hasPrefix("ssr://")) {
                 self?.handleQRCodeResult(result.value)
             } else {
                 let alert = UIAlertController(
@@ -251,16 +257,19 @@ extension ServerListController : UITableViewDataSource, UITableViewDelegate {
         let cellid = "ServerCellID"
         var cell = tableView.dequeueReusableCell(withIdentifier: cellid)
         if cell==nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: cellid)
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellid)
             cell?.imageView?.contentMode = .scaleAspectFit
             cell?.accessoryType = .disclosureIndicator
+            cell?.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+            cell?.detailTextLabel?.font = UIFont.systemFont(ofSize: 16)
         }
         let profile = self.profileMgr.profiles[indexPath.row]
         cell?.textLabel?.text = profile.title()
+        cell?.detailTextLabel?.text = profile.remark.isEmpty ? "" : profile.remark
         if profile.uuid == self.profileMgr.activeProfileId {
-            cell?.imageView?.image = #imageLiteral(resourceName: "Icons/selected")
+            cell?.imageView?.image = UIImage.init(imageLiteralResourceName: "Icons/selected")
         } else {
-            cell?.imageView?.image = #imageLiteral(resourceName: "Icons/noselected")
+            cell?.imageView?.image = UIImage.init(imageLiteralResourceName: "Icons/noselected")
         }
         return cell!
     }
@@ -268,7 +277,7 @@ extension ServerListController : UITableViewDataSource, UITableViewDelegate {
     //MARK: UITableViewDelegate
     // 设置cell高度
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44.0
+        return 64.0
     }
     // 选中cell后执行此方法
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
